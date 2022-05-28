@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  centos:
+    image: centos:7
+    container_name: centos7
+    command: ["sleep","infinity"]
+  ubuntu:
+    image: pycontribs/ubuntu
+    container_name: ubuntu
+    command: ["sleep","infinity"]
+  fedora:
+    image: pycontribs/fedora
+    container_name: fedora
+    command: ["sleep","infinity"]
