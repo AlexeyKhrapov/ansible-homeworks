@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  clickhouse:
+    image: jdeathe/centos-ssh:centos-7
+    container_name: clickhouse-01
+    stdin_open: true
+    tty: true 
+    environment:
+      - SSH_SUDO=ALL=(ALL) NOPASSWD:ALL
+    networks:
+      - bridge
+
+networks:
+  bridge:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 172.20.0.0/24
+         gateway: 172.20.0.1
