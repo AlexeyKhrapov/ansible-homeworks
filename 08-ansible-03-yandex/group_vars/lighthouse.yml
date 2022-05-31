@@ -1,0 +1,5 @@
+---
+lighthouse_vcs: https://github.com/VKCOM/lighthouse.git
+lighthouse_access_log: lighthouse_access
+lighthouse_dir: /home/kad/lighthouse
+nginx_username: root
