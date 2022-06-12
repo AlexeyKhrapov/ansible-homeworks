@@ -1,0 +1,13 @@
+---
+clickhouse:
+  hosts:
+    clickhouse-01:
+      ansible_host: 10.10.0.4
+lighthouse:
+  hosts:
+    lighthouse-01:
+      ansible_host: 10.10.0.3
+vector:
+  hosts:
+    vector-01:
+      ansible_host: 10.10.02

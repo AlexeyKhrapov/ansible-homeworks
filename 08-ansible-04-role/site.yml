@@ -1,0 +1,22 @@
+---
+- name: Install Lighthouse
+  hosts: lighthouse
+  gather_facts: true
+  become: true
+  roles:
+    - geerlingguy.git
+    - nginxinc.nginx
+    - lighthouse-role
+
+- name: Install Clickhouse
+  hosts: clickhouse
+  gather_facts: true
+  roles:
+    - clickhouse
+
+- name: Install Vector
+  hosts: vector
+  gather_facts: true
+  become: true
+  roles:
+    - vector-role

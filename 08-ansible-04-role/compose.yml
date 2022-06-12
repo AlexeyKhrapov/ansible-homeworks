@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  clickhouse-01:
+    image: "centos:7"
+    container_name: "clickhouse-01"
+    command: ["sleep","infinity"]
+
+  vector-01:
+    image: "centos:7"
+    container_name: "vector-01"
+    command: ["sleep","infinity"]
+
+  lighthouse-01:
+    image: "centos:7"
+    container_name: "lighthouse-01"
+    command: ["sleep","infinity"]
+    ports:
+      - "80:80"
+      - "443:443"
