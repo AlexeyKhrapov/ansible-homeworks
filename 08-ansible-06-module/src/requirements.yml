@@ -1,0 +1,4 @@
+collections:
+  - name: git@github.com:AlexeyKhrapov/my_own_collection.git#yandex_cloud_cvl
+    type: git
+    version: main

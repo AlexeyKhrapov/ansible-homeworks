@@ -1,0 +1,10 @@
+---
+  - name: Collection playbook test
+    hosts: localhost
+    collections:
+      - my_own_collection.yandex_cloud_cvl
+    vars:
+      - path: "./collection_test.txt"
+      - content: "Test content"
+    roles:
+      - my_own_role
